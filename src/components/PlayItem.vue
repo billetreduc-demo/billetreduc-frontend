@@ -120,7 +120,7 @@ li {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: 500;
 }
 
 .dialog {
@@ -214,6 +214,67 @@ li {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .dialog {
+    .play-data {
+      margin-bottom: 20px;
+    }
+
+    .play-image {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .dialog {
+    .dialog-content {
+      flex-direction: column;
+    }
+
+    .play-data {
+      .buy-info {
+        flex-direction: column;
+        align-items: flex-start;
+
+
+        .tickets-left {
+          margin-bottom: 20px;
+        }
+      }
+
+      .reserve-btn {
+        height: fit-content;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  li {
+    max-width: 100%;
+  }
+
+  .dialog {
+    padding: 20px;
+
+    .dialog-content {
+      flex-direction: column;
+    }
+
+    .play-data {
+      margin-right: 0;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .play-image {
+      margin-bottom: 20px;
+    }
   }
 }
 </style>

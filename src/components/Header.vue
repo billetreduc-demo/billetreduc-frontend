@@ -34,7 +34,7 @@ const handleSearch = () => {
   color: #ffffff;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 300;
 
   .content {
     display: flex;
@@ -75,6 +75,24 @@ const handleSearch = () => {
       cursor: pointer;
       font-weight: bold;
       font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .search-bar {
+      margin-top: 20px;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
     }
   }
 }

@@ -145,7 +145,22 @@ watch(() => props.plays, (newPlays) => {
     gap: 1rem;
     list-style: none;
     padding: 0;
-    min-height: 500px;
+    min-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plays-container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .plays-container {
+    .play-list {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 </style>

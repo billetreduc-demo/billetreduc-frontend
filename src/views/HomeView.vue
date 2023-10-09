@@ -22,8 +22,7 @@ onMounted(fetchPlays);
 <template>
   <main>
     <PlayList :plays="playList" :listTitle="'All Plays'" :listType="'ALL'"/>
-    <PlayList :plays="playList" :listTitle="'Most Booked Plays'" :containerBackground="'#C10000'"
-              :listType="'MOST_BOOKED'"/>
+    <PlayList :plays="playList" :listTitle="'Most Booked Plays'" :listType="'MOST_BOOKED'"/>
     <PlayList :plays="playList" :listTitle="'Search By Genre'" :listType="'SEARCH_BY_GENRE'"/>
   </main>
 </template>
@@ -35,5 +34,20 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 80px auto 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 180px auto 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 </style>

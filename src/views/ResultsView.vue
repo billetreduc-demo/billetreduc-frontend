@@ -42,4 +42,12 @@ main {
   width: 100%;
   margin: 80px auto 140px;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 180px auto 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 </style>
