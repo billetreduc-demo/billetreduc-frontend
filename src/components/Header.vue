@@ -6,7 +6,7 @@ import router from "@/router";
 const searchQuery = ref('');
 const handleSearch = () => {
   if (searchQuery.value.trim()) {
-    router.push({ name: 'results', query: { searchTerm: searchQuery.value } });
+    router.push({name: 'results', query: {searchTerm: searchQuery.value}});
   }
 };
 </script>
@@ -16,7 +16,7 @@ const handleSearch = () => {
     <div class="content">
       <RouterLink class="company-name" to="/">BilletRéduc</RouterLink>
       <div class="search-bar">
-        <input type="text" v-model="searchQuery" placeholder="Search for plays ...">
+        <input type="text" v-model="searchQuery" placeholder="Search for plays ..." @keyup.enter="handleSearch">
         <button @click="handleSearch">
           <Icon icon="carbon:search" width="28"/>
         </button>
@@ -64,6 +64,7 @@ const handleSearch = () => {
       width: 400px;
       height: 55px;
       font-size: 1.2em;
+      margin-right: 0;
     }
 
     button {
