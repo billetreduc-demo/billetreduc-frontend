@@ -1,0 +1,24 @@
+{
+  "name": "billet-reduc-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@purge-icons/generated": "^0.9.0",
+    "axios": "^1.5.1",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "vue-use": "^0.2.0"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.1.1",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "sass": "^1.69.0",
+    "uid": "^2.0.2",
+    "vite": "^4.4.9"
+  }
+}
